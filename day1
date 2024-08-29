@@ -1,0 +1,21 @@
+在Python中用引号引起来的字符集称之为字符串，比如：'hello'、"my Python"、"2+3"等都是字符串 Python中字符串中使用的引号可以是单引号、双引号跟三引号
+  print ('hello world!')
+  hello world!
+转义字符''
+  转义字符\可以转义很多字符，比如\n表示换行，\t表示制表符，字符\本身也要转义，所以\表示的字符就是\
+  原样输出引号内字符串可以使用在引号前加r
+取子字符串有两种方法，使用[]索引或者切片运算法[:]
+s = 'Python'
+  print (s[2])
+  t
+print (s[1:4])
+  yth
+字符串连接与格式化输出
+  word1 = '"hello"'
+word2 = '"world"'
+sentence = word1.strip('"') + ' ' + word2.strip('"') + '!'
+
+print( 'The first word is %s, and the second word is %s' %(word1, word2))
+print (sentence)
+  The first word is "hello", and the second word is "world"
+hello world!
