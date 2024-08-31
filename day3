@@ -1,0 +1,56 @@
+列表
+  列表索引和切片
+mylist= [0, 1, 2, 3, 4, 5]
+# 索引从0开始，含左不含右
+print ('[4]=', mylist[4])
+print ('[-4]=', mylist[-4])
+print ('[0:4]=', mylist[0:4])
+print ('[:4]=', mylist[:4])#dddd
+print( '[4:]=', mylist[4:])
+print ('[0:4:2]=', mylist[0:4:2]) # 0到4，步长为2
+print ('[-5:-1:]=', mylist[-5:-1:]) # 倒数第5个元素开始到倒数第一个元素，倒序
+print ('[-2::-1]=', mylist[-2::-1])  # 倒数第二个元素开始到序列开始的元素，倒序
+  [4]= 4
+  [-4]= 2
+  [0:4]= [0, 1, 2, 3]
+  [:4]= [0, 1, 2, 3]
+  [4:]= [4, 5]
+  0:4:2]= [0, 2]
+  [-5:-1:]= [1, 2, 3, 4]
+  [-2::-1]= [4, 3, 2, 1, 0]
+  修改列表
+mylist[3] = "小月"  
+print (mylist[3])
+
+mylist[5]="小楠"
+print (mylist[5])
+
+mylist[5]=19978
+print (mylist[5])
+  小月
+  小楠
+  19978
+  插入元素
+mylist.append('han') # 添加到尾部
+mylist.extend(['long', 'wan']) # 添加到尾部
+print (mylist)
+    [0, 1, 2, '小月', 4, 19978, 'han', 'long', 'wan']
+scores = [90, 80, 75, 66]
+mylist.insert(1, scores) # 添加到指定位置
+mylist
+    [0, [90, 80, 75, 66], 1, 2, '小月', 4, 19978, 'han', 'long', 'wan']
+    a=[]
+  删除元素
+print (mylist.pop(1)) # 该函数返回被弹出的元素，不传入参数则删除最后一个元素
+print (mylist)
+  [90, 80, 75, 66]
+  [0, 1, 2, '小月', 4, 19978, 'han', 'long', 'wan']
+  判断元素是否在列表中以及在列表中的位置
+print( 'wan' in mylist)
+print ('han' not in mylist)
+    True
+    False
+mylist.count('wan')
+    1
+mylist.index('wan')
+    8
